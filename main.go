@@ -47,7 +47,7 @@ func updateName(x *string) {
 // 	y["soup"] = 2.99
 // }
 
-func main() {
+func mainp() {
 
 	name := "tifa"
 
