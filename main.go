@@ -2,7 +2,75 @@ package main
 
 import "fmt"
 
+// func sayGreeting(n string) {
+// 	fmt.Printf("Good morning %v \n", n)
+// }
+
+// func sayBye(n string) {
+// 	fmt.Printf("Goodbye %v\n", n)
+// }
+
+// func cycleNames(n []string, f func(string)) {
+// 	for _, value := range n {
+// 		f(value)
+// 	}
+// }
+
+// func circleArea(r float64) float64 {
+// 	return math.Pi * r * r
+// }
+
+// func getInitials(n string) (string, string) {
+// 	s := strings.ToUpper(n)
+// 	names := strings.Split(s, " ")
+
+// 	var initials []string
+
+// 	for _, v := range names {
+// 		initials = append(initials, v[:1])
+// 	}
+
+// 	if len(initials) > 1 {
+// 		return initials[0], initials[1]
+// 	}
+
+// 	return initials[0], "_"
+// }
+
+var score = 99.5
+
 func main() {
+
+	sayHello("John")
+
+	for _, v := range points {
+		fmt.Println(v)
+	}
+
+	showScore()
+
+	// fn1, sn1 := getInitials("tifa lockhart")
+	// fmt.Println(fn1, sn1)
+
+	// fn2, sn2 := getInitials("Clond strifee")
+	// fmt.Println(fn2, sn2)
+
+	// fn3, sn3 := getInitials("Workshop")
+	// fmt.Println(fn3, sn3)
+
+	// sayGreeting("John")
+	// sayBye("Chishugi")
+
+	// names := []string{"john", "goo", "coool", "yoyo", "hoool"}
+
+	// cycleNames(names, sayGreeting)
+	// cycleNames(names, sayBye)
+
+	// a1 := circleArea(10.5)
+	// a2 := circleArea(15)
+
+	// fmt.Println(a1, a2)
+	// fmt.Printf("circle 1 is %0.3f and circle 2 is %0.3f \n", a1, a2)
 
 	// //string
 	// var nameOne string = "John"
@@ -146,33 +214,32 @@ func main() {
 	// }
 
 	// fmt.Println(names)
-	age := 25
-	fmt.Println(age <= 50)
-	fmt.Println(age >= 50)
-	fmt.Println(age == 45)
-	fmt.Println(age != 50)
+	// age := 25
+	// fmt.Println(age <= 50)
+	// fmt.Println(age >= 50)
+	// fmt.Println(age == 45)
+	// fmt.Println(age != 50)
 
-	if age < 30 {
-		fmt.Println("age is less than 30")
-	} else if age < 40 {
-		fmt.Println("age is less than 40")
-	} else {
-		fmt.Println("age is not less than 45")
-	}
+	// if age < 30 {
+	// 	fmt.Println("age is less than 30")
+	// } else if age < 40 {
+	// 	fmt.Println("age is less than 40")
+	// } else {
+	// 	fmt.Println("age is not less than 45")
+	// }
 
-	names := []string{"john", "goo", "coool", "yoyo", "hoool"}
+	// names := []string{"john", "goo", "coool", "yoyo", "hoool"}
 
-	for index, value := range names {
-		if index == 1 {
-			fmt.Println("continuing at pos", index)
-			continue
-		}
+	// for index, value := range names {
+	// 	if index == 1 {
+	// 		fmt.Println("continuing at pos", index)
+	// 		continue
+	// 	}
 
-		if index > 2 {
-			fmt.Println("Breaking at pos", index)
-			break
-		}
-		fmt.Printf("The value at pos %v is %v\n", index, value)
-	}
-
+	// 	if index > 2 {
+	// 		fmt.Println("Breaking at pos", index)
+	// 		break
+	// 	}
+	// 	fmt.Printf("The value at pos %v is %v\n", index, value)
+	// }
 }
