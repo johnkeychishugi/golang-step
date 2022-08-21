@@ -37,17 +37,77 @@ import "fmt"
 // 	return initials[0], "_"
 // }
 
-var score = 99.5
+// var score = 99.5
+
+func updateName(x *string) {
+	*x = "wedge"
+}
+
+// func updateMenu(y map[string]float64) {
+// 	y["soup"] = 2.99
+// }
 
 func main() {
 
-	sayHello("John")
+	name := "tifa"
 
-	for _, v := range points {
-		fmt.Println(v)
-	}
+	// updateName(name)
 
-	showScore()
+	// fmt.Println(name)
+	// fmt.Println("Memory address of name is: ", &name)
+
+	m := &name
+
+	// fmt.Println("Memory address:", m)
+	// fmt.Println("Value at memory address", *m)
+
+	fmt.Println(name)
+	updateName(m)
+	fmt.Println(name)
+
+	// menu := map[string]float64{
+	// 	"soup":           4.99,
+	// 	"pie":            7.99,
+	// 	"salad":          6.99,
+	// 	"toffee pudding": 3.55,
+	// }
+
+	// updateMenu(menu)
+
+	// fmt.Println(menu)
+
+	// fmt.Println(menu)
+	// fmt.Println(menu["pie"])
+
+	// //looping maps
+
+	// for k, v := range menu {
+	// 	fmt.Println(k, "-", v)
+	// }
+
+	// // ints as key type
+
+	// phonebook := map[int]string{
+	// 	13313131: "john",
+	// 	23330131: "chishugi",
+	// 	33193131: "iragu",
+	// }
+
+	// fmt.Println(phonebook)
+	// fmt.Println(phonebook[13313131])
+
+	// phonebook[33193131] = "ary"
+	// fmt.Println(phonebook)
+
+	// phonebook[23330131] = "Yoshi"
+	// fmt.Println(phonebook)
+
+	// sayHello("John")
+	// for _, v := range points {
+	// 	fmt.Println(v)
+	// }
+
+	// showScore()
 
 	// fn1, sn1 := getInitials("tifa lockhart")
 	// fmt.Println(fn1, sn1)
