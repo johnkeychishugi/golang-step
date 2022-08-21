@@ -1,0 +1,6 @@
+Bill breakdown: 
+dddd:                     ...$4 
+hhh:                      ...$3 
+ffg:                      ...$8 
+tip:                      ...$6 
+total:                    ...$21.00

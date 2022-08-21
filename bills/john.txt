@@ -1,0 +1,4 @@
+Bill breakdown: 
+ff:                       ...$3 
+tip:                      ...$5 
+total:                    ...$8.00
